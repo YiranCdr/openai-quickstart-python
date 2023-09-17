@@ -32,6 +32,3 @@ def generate_prompt(user_input):
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_input},
     ]
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3000)
