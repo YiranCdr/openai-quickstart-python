@@ -30,7 +30,8 @@ def index():
         return redirect(url_for("index", result=response.choices[
             0].message.content))
 
-    result = request.args.get("result")
+    # result = request.args.get("result")
+    result = generate_prompt("")
     return render_template("index.html", result=result)
 
 

@@ -1,18 +1,19 @@
 @font-face {
   font-family: "ColfaxAI";
-  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
-      format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+  url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "ColfaxAI";
   src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
+
 body,
 input {
   font-size: 16px;
@@ -20,39 +21,32 @@ input {
   color: #353740;
   font-family: "ColfaxAI", Helvetica, sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
 }
-.icon {
-  width: 34px;
-}
-h3 {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: bold;
-  color: #202123;
-  margin: 16px 0 40px;
-}
+
 form {
   display: flex;
-  flex-direction: column;
-  width: 320px;
 }
+
 input[type="text"] {
   padding: 12px 16px;
   border: 1px solid #10a37f;
   border-radius: 4px;
-  margin-bottom: 24px;
+  width: 50em;
 }
+
 ::placeholder {
   color: #8e8ea0;
   opacity: 1;
 }
+
 input[type="submit"] {
-  padding: 12px 0;
+  padding: 10px 16px;
   color: #fff;
   background-color: #10a37f;
   border: none;
@@ -60,7 +54,29 @@ input[type="submit"] {
   text-align: center;
   cursor: pointer;
 }
+
 .result {
   font-weight: bold;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+}
+
+table.history_table {
+  margin: 1em auto;
+  width: 50em;
+  border-collapse: collapse;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-family: "Times New Roman", "STSong", "??", STKaiti, "????", serif;
+}
+
+.history_table th, .history_table td {
+  padding: 4px 8px;
+}
+
+.history_table tbody tr:nth-child(odd) {
+  background: #bcd5cc;
+}
+
+.history_table tr *:nth-child(3), .history_table tr *:nth-child(4) {
+  text-align: right;
 }
