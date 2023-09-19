@@ -18,3 +18,9 @@ build/
 .env
 
 .idea/
+
+dialogs/
+
+*.db
+
+test_main.py
